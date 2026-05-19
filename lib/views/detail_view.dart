@@ -140,7 +140,9 @@ class DetailView extends StatelessWidget {
                           //   );
                           // }),
                           child: ElevatedButton.icon(
-                            onPressed: () {},
+                            onPressed: () {
+                              favoriteController.toggleFavorite(detailGame);
+                            },
                             icon: const Icon(Icons.add, color: Colors.white),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.blue,
